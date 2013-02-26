@@ -1,0 +1,50 @@
+﻿<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="options.css">
+  <title id="widget-title">Opera Extensions | Gixen eBay Toolkit Preferences</title>
+</head>
+<body>
+  <header>
+    <img src="/icons/icon_settings.png">
+    <h1 id="widget-name">Gixen eBay Toolkit</h1>
+    <h3>Preferences</h3>
+  </header>
+
+  <section>
+	<h3>Your eBay login:</h3>
+    <fieldset>
+      <p>
+        <input type="text" id="loginInput" placeholder="Input your eBay login here" />
+		<input type="button" value="OK"></input>
+      </p>
+    </fieldset>
+
+  </section>
+
+  <footer>
+    <p>Powered by the Opera Browser</p>
+  </footer>
+
+<script>
+
+
+addEventListener('DOMContentLoaded', function() {
+		opera.postError("Settings loaded!");
+        var storage = widget.preferences; // local storage
+		var loginInputElement = document.getElementById('loginInput');
+		loginInputElement.value = storage.login;
+                loginInputElement.addEventListener( 'change', function() {
+					var value = this.value;
+					opera.postError("Got settings field value :"+value);
+					storage.setItem( 'login', value );
+				
+					}
+					, true );
+
+
+});
+</script>
+</body>
+</html>

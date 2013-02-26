@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget xmlns="http://www.w3.org/ns/widgets" version="1.0" id="https://addons.opera.com/extensions/details/gixen-ebay-toolkit/" href="https://addons.opera.com/extensions/details/gixen-ebay-toolkit/">
+  <name short="Gixen" xml:lang="en">Gixen eBay Toolkit</name>
+  <author href="yourURL" email="wain-pc@mail.ru">Wain</author>
+  <icon src="icons/icon_18.png"/>
+  <icon src="icons/icon_64.png"/>
+  <icon src="icons/icon_settings.png"/>
+  <feature name="opera:share-cookies" required="false"/>
+  <access origin="http://gixen.com" subdomains="true"/>
+  <access origin="http://www.gixen.com" subdomains="true"/>
+  <access origin="https://gixen.com" subdomains="true"/>
+  <access origin="https://www.gixen.com" subdomains="true"/>
+  <update-description href="https://extension-updates.opera.com/api/w3c-wd1/update/9923fde3-d2bc-4620-8b12-838589428773/"/>
+  <description xml:lang="en">This extension adds Gixen button directly to eBay item page.</description>
+</widget>
